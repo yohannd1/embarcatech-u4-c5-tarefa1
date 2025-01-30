@@ -23,3 +23,8 @@ como não há LED amarelo, o resultado não foi idêntico ao da simulação.
 Esta atividade consiste em um botão conectado à porta GPIO 5 que, ao ser
 pressionado, acende todos os LEDs e, a cada 3 segundos, um deles se
 apaga.
+
+Testando na placa BitDogLab, ao apertar o botão A a sequência é
+reproduzida com sucesso, mas como os LEDs RGB estão posicionados no
+mesmo lugar a demonstração é um pouco diferente (combinação de cores ao
+invés de LEDs visualmente distintos).
