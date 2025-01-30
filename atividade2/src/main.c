@@ -22,7 +22,6 @@ int64_t callback(alarm_id_t _id, void *_) {
 	gpio_put(LED_PIN_2, counter <= 1);
 	gpio_put(LED_PIN_3, counter <= 2);
 
-	printf("* %d\n", counter);
 	is_alarm_enabled = (counter < 3);
 
 	counter++;
