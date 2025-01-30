@@ -22,26 +22,27 @@ set(PICO_BOARD pico_w CACHE STRING "Board type")
 
 include(pico_sdk_import.cmake)
 
-project(u4_c5_tarefa1 C CXX ASM)
+project(atividade1 C CXX ASM)
 
 pico_sdk_init()
 
-add_executable(u4_c5_tarefa1
+add_executable(atividade1
     src/main.c
 )
 
-pico_set_program_name(u4_c5_tarefa1 "u4_c5_tarefa1")
-pico_set_program_version(u4_c5_tarefa1 "0.1")
+pico_set_program_name(atividade1 "atividade1")
+pico_set_program_version(atividade1 "0.1")
 
-pico_enable_stdio_uart(u4_c5_tarefa1 1)
-pico_enable_stdio_usb(u4_c5_tarefa1 1)
+pico_enable_stdio_uart(atividade1 1)
+pico_enable_stdio_usb(atividade1 1)
 
-target_include_directories(u4_c5_tarefa1 PRIVATE
+target_include_directories(atividade1 PRIVATE
     ${CMAKE_CURRENT_LIST_DIR}
 )
 
-target_link_libraries(u4_c5_tarefa1
+target_link_libraries(atividade1
     pico_stdlib
+    hardware_timer
 )
 
-pico_add_extra_outputs(u4_c5_tarefa1)
+pico_add_extra_outputs(atividade1)
